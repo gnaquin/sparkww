@@ -242,11 +242,9 @@ nav a {
 /* end intro container */
 
 ion-card{
-  max-width: 350px
-}
-
-ion-card > img {
   width: 100%;
-  max-width: 355px;
-  height: 500px;
+  min-width: 263px;
+  max-width: 479px;
+  height: auto;
+  margin: auto;
 }

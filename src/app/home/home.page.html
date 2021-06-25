@@ -1,74 +1,66 @@
-<header>
-  <input type="checkbox" id="nav-toggle" class="nav-toggle" />
-  <nav>
-    <ul>
-      <li><a class="one" href="#">About</a></li>
-      <li><a class="two" href="#">Calendar</a></li>
-      <li><a class="three" href="#">Donate</a></li>
-      <li><a class="four" href="#">Mission Trips</a></li>
-      <li><a class="five" href="#">Water Wells</a></li>
-    </ul>
-  </nav>
-  <label for="nav-toggle" class="nav-toggle-label">
-    <span></span>
-  </label>
-  <img class="logo" src="../../assets/black_favicon_b.png" />
-</header>
-
-<!-- header ends -->
-
 <ion-content>
-  <div class="introContainer">
+  <header>
+    <input type="checkbox" id="nav-toggle" class="nav-toggle" />
+    <nav>
+      <ul>
+        <li><a class="one" href="#">About</a></li>
+        <li><a class="two" href="#">Calendar</a></li>
+        <li><a class="three" href="#">Donate</a></li>
+        <li><a class="four" href="#">Mission Trips</a></li>
+        <li><a class="five" href="#">Water Wells</a></li>
+      </ul>
+    </nav>
+    <label for="nav-toggle" class="nav-toggle-label">
+      <span></span>
+    </label>
+    <img class="logo" src="../../assets/black_favicon_b.png" />
+  </header>
+  <!-- header ends -->
+
+  <div class="page">
     <div class="intro">
-      <img class="front" src="../../assets/spark3.jpg" />
-      <img class="blur" src="../../assets/spark3plain.jpg" />
+      <div class="title">
+        <h1>SPARK Worldwide</h1>
+        <h2>Serve, Protect, And Raise Kids</h2>
+      </div>
+
+      <img class="heart" src="../../assets/spark3plain.jpg" />
+    </div>
+
+    <div class="cards">
+      <ion-card>
+        <img src="../../assets/grace.jpg" />
+        <ion-card-header>
+          <ion-card-subtitle class="ion-text-center"
+            >Learn how we're changing lives</ion-card-subtitle
+          >
+          <ion-button expand="block" size="large" strong="true" fill="outline"
+            >Support Us</ion-button
+          >
+        </ion-card-header>
+      </ion-card>
+      <ion-card>
+        <img src="../../assets/miss.JPG" />
+        <ion-card-header>
+          <ion-card-subtitle class="ion-text-center"
+            >Serve and make an impact</ion-card-subtitle
+          >
+          <ion-button expand="block" size="large" strong="true" fill="outline"
+            >Mission Trips</ion-button
+          >
+        </ion-card-header>
+      </ion-card>
+      <ion-card>
+        <img src="../../assets/water-2.jpg" />
+        <ion-card-header>
+          <ion-card-subtitle class="ion-text-center"
+            >Support our mission to provide water</ion-card-subtitle
+          >
+          <ion-button expand="block" size="large" strong="true" fill="outline"
+            >Water Wells</ion-button
+          >
+        </ion-card-header>
+      </ion-card>
     </div>
   </div>
-
-  <!-- grid start -->
-  <ion-grid>
-    <ion-row>
-      <ion-col>
-        <div class="ion-margin">
-          <h1 class="ion-margin">
-            SPARK brings joy to children worldwide. Together we can continue to
-            be the spark that brings help to thousands of hurting, hungry and
-            hopeless children in over 20 countries every month.
-          </h1>
-        </div>
-      </ion-col>
-    </ion-row>
-
-    <ion-row>
-      <ion-col>
-        <ion-card>
-          <ion-card-header>
-            <ion-card-subtitle class="ion-text-center">Learn how we're changing lives</ion-card-subtitle>
-            <ion-button expand="block" size="large" strong="true" fill="outline">Support Us</ion-button>
-          </ion-card-header>
-          <img src="../../assets/grace.jpg" />
-        </ion-card>
-      </ion-col>
-
-      <ion-col>
-        <ion-card>
-          <ion-card-header>
-            <ion-card-subtitle class="ion-text-center">Serve and make an impact</ion-card-subtitle>
-            <ion-button expand="block" size="large" strong="true" fill="outline">Mission Trips</ion-button>
-          </ion-card-header>
-          <img src="../../assets/miss.JPG" />
-        </ion-card>
-      </ion-col>
-
-      <ion-col>
-        <ion-card>
-          <ion-card-header>
-            <ion-card-subtitle class="ion-text-center">Support our mission to provide water</ion-card-subtitle>
-            <ion-button expand="block" size="large" strong="true" fill="outline">Water Wells</ion-button>
-          </ion-card-header>
-          <img src="../../assets/water-2.jpg" />
-        </ion-card>
-      </ion-col>
-    </ion-row>
-  </ion-grid>
 </ion-content>

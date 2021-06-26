@@ -26,7 +26,7 @@
   text-decoration: none;
 }
 
-/* begin header */
+// begin header
 header {
   text-align: center;
   position: fixed;
@@ -200,7 +200,7 @@ nav a {
     transform: scale(1, 1);
   }
 }
-/* end header */
+// end header
 
 .page {
   display: grid;
@@ -208,7 +208,7 @@ nav a {
   padding: 0;
 }
 
-// intro start //
+// intro start
 .intro {
   grid-row: 1;
   margin-top: 5em;
@@ -234,7 +234,7 @@ nav a {
   font-size: clamp(1em, 50vw, 5em);
 }
 
-@media screen and (max-width: 860px){
+@media screen and (max-width: 796px){
   .intro{
     align-items: flex-start
   }
@@ -244,22 +244,51 @@ nav a {
     max-width: 80vw
   }
 }
-// intro end //
+
+@media screen and (max-width: 371px){
+  .intro{
+    align-items: flex-start
+  }
+
+  .title{
+    font-size: clamp(4em, 13vw, 14em);
+  }
+
+  .subtitle{
+    padding-left: 1.5em;
+    max-width: 80vw
+  }
+}
+// intro end
 
 .navArrow{
   grid-row: 2;
   width: 100vw;
   font-size: 3em;
-  margin-top: .2em;
-  margin-bottom: .2em;
+  margin-top: .4em;
+  margin-bottom: .3em;
   display: flex;
   justify-content: center;
 }
 
+// cards start
+.cards{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.card{
+  min-width: 270px;
+  max-width: 487.2px;
+}
+
 ion-card {
   width: 100%;
-  min-width: 263px;
-  max-width: 479px;
-  height: auto;
-  margin: auto;
+  height: auto
+}
+// cards end
+
+.calendar{
+  display: flex;
 }

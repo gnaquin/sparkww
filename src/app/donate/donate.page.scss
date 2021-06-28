@@ -1,0 +1,214 @@
+// begin header
+header {
+  text-align: center;
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  top: 0;
+  background-color: white;
+  border-bottom: 0.3em solid #fab206;
+}
+
+.logo {
+  max-width: 7em;
+  max-height: 5em;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  position: absolute;
+  text-align: left;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  transform: scale(1, 0);
+  transform-origin: top;
+  transition: transform 400ms ease-in-out;
+  background-color: white;
+  border-bottom: 0.3em solid #fab206;
+}
+
+.nav-toggle:checked ~ nav {
+  transform: scale(1, 1);
+}
+
+.nav-toggle {
+  display: none;
+}
+
+.nav-toggle-label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-left: 1em;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.nav-toggle-label span,
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
+  display: block;
+  background: black;
+  height: 2px;
+  width: 2em;
+  border-radius: 2px;
+  position: relative;
+}
+
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
+  content: "";
+  position: absolute;
+}
+
+.nav-toggle-label span::before {
+  bottom: 8px;
+}
+
+.nav-toggle-label span::after {
+  top: 8px;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  margin-bottom: 1em;
+  margin-left: 1em;
+}
+
+nav a {
+  color: black;
+  text-decoration: none;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  opacity: 0;
+  transition: opacity 150ms ease-in-out;
+}
+
+.nav-toggle:checked ~ nav a {
+  opacity: 1;
+  transition: opacity 250ms ease-in-out 250ms;
+}
+
+.one:hover {
+  color: #e50606;
+}
+
+.two:hover {
+  color: #15ca04;
+}
+
+.three:hover {
+  color: #fab206;
+}
+
+.four:hover {
+  color: #8d04d4;
+}
+
+.five:hover {
+  color: #3b78f4;
+}
+
+@media screen and (min-width: 1136px) {
+  .nav-toggle-label {
+    display: none;
+  }
+
+  header {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .logo {
+    grid-column: 3/4;
+    align-self: center;
+    justify-self: center;
+  }
+
+  nav {
+    all: unset;
+    grid-column: 1/3;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  nav ul {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  nav li {
+    margin-left: 3em;
+    margin-bottom: 0;
+  }
+
+  nav a {
+    opacity: 1;
+    position: relative;
+  }
+
+  nav a::before {
+    content: "";
+    height: 5px;
+    background-color: black;
+    position: absolute;
+    top: -0.75em;
+    left: 0;
+    right: 0;
+    transform: scale(0, 1);
+    transition: transform ease-in-out 250ms;
+  }
+
+  nav a:hover::before {
+    transform: scale(1, 1);
+  }
+}
+// end header
+
+.page {
+  margin-top: 6em;
+}
+
+h1,
+h2 {
+  text-align: center;
+}
+
+.kindfulCard{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.kindful {
+  width: 70vw;
+  height: 65vh;
+}
+
+.kindfulCard > h3{
+  max-width: 30vw;
+  align-self: center;
+  text-align: center;
+}
+
+.donateContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+ion-card {
+  min-width: 15em;
+  width: 20em;
+  height: 30em;
+  text-align: center;
+}

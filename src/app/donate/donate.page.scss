@@ -176,34 +176,48 @@ nav a {
 
 .page {
   margin-top: 6em;
-}
-
-h1,
-h2 {
-  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .kindfulCard{
+  width: 100%;
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
+  max-width: 70vw;
 }
 
 .kindful {
-  width: 70vw;
-  height: 65vh;
+  width: 80vw;
+  height: fit-content
 }
 
-.kindfulCard > h3{
-  max-width: 30vw;
-  align-self: center;
-  text-align: center;
+.kindful > ion-card-header > ion-icon{
+  font-size: 5em;
+}
+
+.intro{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.icon{
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 .donateContainer {
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+}
+
+h2{
+  width: 100%
 }
 
 ion-card {

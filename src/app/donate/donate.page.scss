@@ -182,47 +182,69 @@ nav a {
 }
 
 .kindfulCard{
-  width: 100%;
+  width: 100vw;
   display: flex;
   justify-content: center;
-  max-width: 70vw;
+  flex-wrap: wrap;
+  text-align: center;
+  align-items: center;
 }
+
+.title > h1{
+  font-size: 2rem;
+}
+
+.title > h2{
+  font-size: 1rem
+}
+
+.iconContainer{
+  font-size: 8em
+}
+
 
 .kindful {
-  width: 80vw;
   height: fit-content
-}
-
-.kindful > ion-card-header > ion-icon{
-  font-size: 5em;
 }
 
 .intro{
   width: 100%;
   display: flex;
   justify-content: center;
+  margin-top: 5em;
 }
 
 .icon{
   width: 100%;
   display: flex;
   justify-content: center;
+  margin-bottom: 5em
 }
 
 .donateContainer {
-  width: 100%;
+  width: 50vw;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-around;
+  text-align: center;
 }
 
 h2{
-  width: 100%
+  width: 100%;
 }
 
-ion-card {
+.donateContainer > ion-card {
   min-width: 15em;
   width: 20em;
-  height: 30em;
+  height: 20em;
   text-align: center;
+  margin-top: 2em;
+  margin-bottom: 2em
+}
+
+.donateContainer > ion-card > ion-button{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0
 }

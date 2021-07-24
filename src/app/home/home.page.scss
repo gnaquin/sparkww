@@ -33,8 +33,8 @@ header {
   z-index: 999;
   width: 100%;
   top: 0;
-  background-color: white;
-  border-bottom: 0.3em solid #fab206;
+  background-color: #fffbf0;
+  border-bottom: 0.3em solid #ffd893;
 }
 
 .logo {
@@ -53,8 +53,8 @@ nav {
   transform: scale(1, 0);
   transform-origin: top;
   transition: transform 400ms ease-in-out;
-  background-color: white;
-  border-bottom: 0.3em solid #fab206;
+  background-color: #fffbf0;
+  border-bottom: 0.3em solid #ffd893;
 }
 
 .nav-toggle:checked ~ nav {
@@ -134,7 +134,7 @@ nav a {
 }
 
 .three:hover {
-  color: #fab206;
+  color: #ffd893;
 }
 
 .four:hover {
@@ -206,6 +206,7 @@ nav a {
   display: grid;
   margin: 0;
   padding: 0;
+  background-color: #fffbf0;
 }
 
 // intro start
@@ -214,13 +215,13 @@ nav a {
   margin-top: 5em;
   display: flex;
   flex-direction: column;
-  height: 80vh;
+  height: 85vh;
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
     url(../../assets/spark3plain.jpg);
   background-position: center;
   align-items: center;
   justify-content: center;
-  color: white;
+  color: #fffbf0;
 }
 
 .title {
@@ -229,72 +230,141 @@ nav a {
 }
 
 .subtitle {
-  padding-top: .05em;
+  padding-top: 0.05em;
   border-top: 0.01em solid white;
   font-size: clamp(1em, 50vw, 5em);
 }
 
-@media screen and (max-width: 796px){
-  .intro{
-    align-items: flex-start
+@media screen and (max-width: 796px) {
+  .intro {
+    align-items: flex-start;
   }
 
-  .subtitle{
+  .subtitle {
     padding-left: 1.5em;
-    max-width: 80vw
+    max-width: 80vw;
   }
 }
 
-@media screen and (max-width: 371px){
-  .intro{
-    align-items: flex-start
+@media screen and (max-width: 371px) {
+  .intro {
+    align-items: flex-start;
   }
 
-  .title{
+  .title {
     font-size: clamp(4em, 13vw, 14em);
   }
 
-  .subtitle{
+  .subtitle {
     padding-left: 1.5em;
-    max-width: 80vw
+    max-width: 80vw;
   }
 }
 // intro end
 
-.navArrow{
+.navArrow {
   grid-row: 2;
   width: 100vw;
   font-size: 2.5em;
-  margin-top: .4em;
-  margin-bottom: .3em;
   display: flex;
   justify-content: center;
 }
 
 // cards start
-.cards{
+.cards {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-evenly;
+  margin-top: 2em;
 }
 
-.card{
+.card {
   min-width: 270px;
   max-width: 321px;
-  max-height: 80vh
+  max-height: 80vh;
 }
 
-.card > img{
+.card > img {
   min-width: 100%;
   max-height: 60vh;
 }
 
 ion-card {
   width: 100%;
-  height: auto
+  height: auto;
+  background-color: #fffbf0;
 }
 // cards end
 
-.calendar{
+// calendar and contact start
+.calendarAndContact {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-top: 2em;
+  background-color: #fffbf0;
+  width: 100%;
+}
+
+.calendarAndContact > ion-card {
+  width: 500px;
+  max-width: 90vw;
+  height: 379px;
+  text-align: center;
+  font-size: 2em;
+}
+
+.calCard{
+  overflow-y: scroll;
+}
+
+ion-list {
+  background-color: #fffbf0;
+}
+
+.contactBtn{
+  display: flex;
+  justify-content: end;
+}
+// calendar and contact end
+
+//footer start
+ion-footer {
+  margin-top: 5em;
+  height: 10vh;
+  background-color: #ffd893;
+  max-width: 100vw;
+}
+
+.footerStuff {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #ffd893;
+  margin: 0;
+  padding: 0;
+}
+
+.sectionOne{
+  padding-top: .7em;
+  text-align: center;
+  max-width: 35ch
+}
+
+.socialIcons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.sectionTwo{
+  font-size: 5em;
+  width: 5em;
+  text-align: center;
+}
+
+.sectionThree{
+  font-size: .9rem;
 }

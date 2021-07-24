@@ -67,16 +67,97 @@
       </ion-card>
     </div>
 
-    <div class="calendar">
+    <div class="calendarAndContact">
+      <ion-card class="calCard">
+        <ion-card-header>
+          <ion-icon name="calendar-outline"></ion-icon>
+          <ion-card-title>Our Calendar</ion-card-title>
+        </ion-card-header>
+        <ion-card-content>
+          <ion-list>
+            <ion-item color="tertiary">
+              <ion-label>August 2021 - Brazil</ion-label>
+              <ion-button fill="outline">Details</ion-button>
+            </ion-item>
+            <ion-item color="tertiary">
+              <ion-label>October 2021 - Africa</ion-label>
+              <ion-button fill="outline">Details</ion-button>
+            </ion-item>
+            <ion-item color="tertiary">
+              <ion-label>February 2022 - Amazon</ion-label>
+              <ion-button fill="outline">Details</ion-button>
+            </ion-item>
+            <ion-item color="tertiary">
+              <ion-label>February 2023 - Amazon</ion-label>
+              <ion-button fill="outline">Details</ion-button>
+            </ion-item>
+            <ion-item color="tertiary">
+              <ion-label>February 2024 - Amazon</ion-label>
+              <ion-button fill="outline">Details</ion-button>
+            </ion-item>
+            <ion-item color="tertiary">
+              <ion-label>February 2025 - Amazon</ion-label>
+              <ion-button fill="outline">Details</ion-button>
+            </ion-item>
+          </ion-list>
+        </ion-card-content>
+      </ion-card>
 
-      <div class="calDate">
-        <ion-list>
-          <ion-item>August 12-17      Mexico</ion-item>
-          <ion-item>August 20-27      Africa</ion-item>
-          <ion-item>September 1-12      Belize</ion-item>
-        </ion-list>
-      </div>
-
+      <ion-card class="contact">
+        <ion-card-header>
+          <ion-icon name="mail-outline"></ion-icon>
+          <ion-card-title>Contact Us</ion-card-title>
+        </ion-card-header>
+        <ion-card-content>
+          <ion-item color="tertiary">
+            <ion-label position="floating">Name</ion-label>
+            <ion-input type="text"></ion-input>
+          </ion-item>
+          <ion-item color="tertiary">
+            <ion-label position="floating">Message</ion-label>
+            <ion-textarea></ion-textarea>
+          </ion-item>
+        </ion-card-content>
+        <div class="contactBtn">
+          <ion-button class="ion-padding" fill="outline">Submit</ion-button>
+        </div>
+      </ion-card>
     </div>
+
+    <ion-footer>
+      <div class="footerStuff">
+        <img class="logo" src="../../assets/black_favicon_b.png" />
+        <div class="sectionTwo">
+          <div class="socialIcons">
+            <ion-button shape="round" fill="clear" size="large" color="dark">
+              <ion-icon slot="icon-only" name="logo-facebook"></ion-icon>
+            </ion-button>
+            <ion-button shape="round" fill="clear" size="large" color="dark">
+              <ion-icon slot="icon-only" name="logo-instagram"></ion-icon>
+            </ion-button>
+            <ion-button shape="round" fill="clear" size="large" color="dark">
+              <ion-icon slot="icon-only" name="logo-youtube"></ion-icon>
+            </ion-button>
+          </div>
+        </div>
+        <div class="sectionOne">
+          <p>
+            Spark Worldwide is a 501(c)(3) organization based out of Burleson
+            Texas
+          </p>
+        </div>
+        <div class="sectionThree">
+          <p>
+            Mail: 329 South Dobson Street, Burleson, Texas 76028
+          </p>
+          <p>
+            Phone: (817) 295-7671
+          </p>
+          <p>
+            Email: darrell@sparkworldwide.org
+          </p>
+        </div>
+      </div>
+    </ion-footer>
   </div>
 </ion-content>

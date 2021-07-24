@@ -285,6 +285,15 @@ nav a {
   justify-content: center;
 }
 
+.navArrowTwo {
+  width: 100vw;
+  font-size: 2.5em;
+  display: flex;
+  justify-content: center;
+  margin-top: 2em;
+  margin-bottom: 2em
+}
+
 // cards start
 .cards {
   display: flex;
@@ -346,6 +355,21 @@ ion-list {
   justify-content: end;
 }
 // calendar and contact end
+
+// youtube start
+.youtube{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  height: 40em;
+}
+
+@media screen and (max-width: 855px) {
+  .youtube{
+    height: 20em
+  }
+}
+// youtube end
 
 //footer start
 ion-footer {

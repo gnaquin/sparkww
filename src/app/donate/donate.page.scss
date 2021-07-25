@@ -175,7 +175,7 @@ nav a {
 // end header
 
 .page {
-  margin-top: 5em;
+  
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -188,21 +188,28 @@ ion-card{
 
 .kindfulCard{
   width: 100vw;
-  min-height: 95vh;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   text-align: center;
   align-items: center;
   background-image: url(../../assets/act.JPG);
-  background-position: 40% 90%;
+  background-size: cover;
+  background-repeat:space;
+  background-position: center;
   color: #fffbf0
 }
 
-@media screen and (max-width: 1335px){
-  .kindfulCard{
-    background-position: left center;
-  }
+.title{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.kindful{
+  font-size: 8em;
+  max-width: 60vw;
 }
 
 .title > h1{

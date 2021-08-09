@@ -365,6 +365,78 @@ ion-list {
 }
 // calendar and contact end
 
+// about 
+.about{
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 100vw;
+  justify-content: center;
+}
+
+.about > h1{
+  width: 100%;
+  font-weight: 700;
+  text-align: center
+}
+
+.about > p{
+  width: 100%;
+ max-width: 35ch
+}
+
+.about > img {
+  max-width: 40vw;
+  height: auto
+}
+
+.staff{
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.staff > h1{
+  font-weight: 700;
+  width: 100%
+}
+
+.leanna{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.leanna > ion-card{
+  max-width: 40ch;
+}
+
+.leanna > img{
+  width: 60%;
+  max-width: 200px;
+  height: auto;
+}
+
+.darrell{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap-reverse;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.darrell > ion-card{
+  max-width: 40ch;
+}
+
+.darrell > img{
+  width: 60%;
+  max-width: 200px;
+  height: auto;
+}
+// about end
+
 // youtube start
 .youtube{
   display: flex;

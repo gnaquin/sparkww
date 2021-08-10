@@ -182,11 +182,11 @@ nav a {
   background-color: #fffbf0;
 }
 
-ion-card{
+ion-card {
   background-color: #fffbf0;
 }
 
-.intro{
+.intro {
   width: 100vw;
   min-height: 90vh;
   display: flex;
@@ -194,86 +194,83 @@ ion-card{
   flex-wrap: wrap;
   text-align: center;
   align-items: center;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
     url(../../assets/act.JPG);
   background-size: cover;
-  background-repeat:space;
+  background-repeat: space;
   background-position: center;
-  color: #fffbf0
+  color: #fffbf0;
 }
 
-.title{
+.title {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
 }
 
-.kindful{
+.kindful {
   font-size: 8em;
   min-width: 40vw;
   max-width: 60vw;
 }
 
-.title > h1{
+.title > h1 {
   font-size: 4.5rem;
   min-width: 7ch;
 }
 
-.title > h2{
+.title > h2 {
   font-size: 2rem;
 }
 
-.titleText{
-  background: blue
+.titleText {
+  background: blue;
 }
 
-.iconContainer{
-  font-size: 8em
+.iconContainer {
+  font-size: 8em;
 }
-
 
 .kindful {
-  height: fit-content
+  height: fit-content;
 }
 
-.down{
+.down {
   width: 100%;
   display: flex;
   justify-content: center;
   margin-top: 5em;
 }
 
-.icon{
+.icon {
   width: 100%;
   display: flex;
   justify-content: center;
-  margin-bottom: 5em
+  margin-bottom: 5em;
+}
+// intro ends
+
+//slides start
+ion-slides {
+  min-height: 21em;
+}
+
+.slides{
+  text-align: center;
 }
 
 .donateContainer {
   width: 100vw;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
-  text-align: center;
+  justify-content: space-evenly
 }
 
-h2{
+h2 {
   width: 100%;
 }
 
-.donateContainer > ion-card {
-  min-width: 15em;
-  width: 20em;
-  height: 20em;
+.card {
+  min-height: fit-content;
   text-align: center;
-  margin-top: 2em;
-  margin-bottom: 5em
-}
-
-.donateContainer > ion-card > ion-button{
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0
 }

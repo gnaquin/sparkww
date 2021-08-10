@@ -7,6 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DonatePage implements OnInit {
 
+  slideOpts = {
+    initialSlide: 0,
+    direction: 'horizontal',
+    speed: 100,
+    spaceBetween: 1,
+    slidesPerView: 1.5,
+    loop: true,
+  };
+
   constructor() { }
 
   ngOnInit() {

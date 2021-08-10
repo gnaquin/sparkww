@@ -21,55 +21,164 @@
   <div class="page">
     <div class="intro">
       <div class="title">
-          <h1>SUPPORT CHILDREN IN NEED</h1>
-          <h2>EVERY DOLLAR COUNTS</h2>
+        <h1>SUPPORT CHILDREN IN NEED</h1>
+        <h2>EVERY DOLLAR COUNTS</h2>
       </div>
-        
-        <ion-card class="kindful ion-padding">
-          <ion-card-header>
-            <ion-icon name="cash-outline"></ion-icon>
-            <ion-card-title>Donate</ion-card-title>
-          </ion-card-header>
-          <ion-item color="tertiary">
-            <ion-label position="floating">Amount</ion-label>
-            <ion-input clearInput></ion-input>
-          </ion-item>
-          <ion-button expand="block" size="large" strong="true" fill="outline">Submit</ion-button>
-        </ion-card>
+
+      <ion-card class="kindful ion-padding">
+        <ion-card-header>
+          <ion-icon name="cash-outline"></ion-icon>
+          <ion-card-title>Donate</ion-card-title>
+        </ion-card-header>
+        <ion-item color="tertiary">
+          <ion-label position="floating">Amount</ion-label>
+          <ion-input clearInput></ion-input>
+        </ion-item>
+        <ion-button expand="block" size="large" strong="true" fill="outline">Submit</ion-button>
+      </ion-card>
     </div>
 
     <div class="down">
-      <p>
-        Looking for something more specific?
-      </p>
+      <p>Looking for something more specific?</p>
     </div>
     <div class="icon">
       <ion-icon name="chevron-down-outline"></ion-icon>
     </div>
 
-    <div class="donateContainer">
-      <h2>Water</h2>
-      <ion-card>
-        <ion-card-header>
-          <ion-card-subtitle>Sponsor an entire well</ion-card-subtitle>
-          <ion-card-title>Whole Water Well</ion-card-title>
-        </ion-card-header>
-        <ion-card-content>
-          When you sponsor an entire well you can dedicate it with a plaque
-        </ion-card-content>
-        <ion-button expand="block" size="large" strong="true" fill="outline">Give</ion-button>
-      </ion-card>
+    <!--start mobile slides-->
+    <div class="slides">
 
-      <ion-card>
-        <ion-card-header>
-          <ion-card-subtitle>Donate toward a well</ion-card-subtitle>
-          <ion-card-title>Water Well</ion-card-title>
-        </ion-card-header>
-        <ion-card-content>
-          Contribute to making life-saving water accessible to everyone
-        </ion-card-content>
-        <ion-button expand="block" size="large" strong="true" fill="outline">Give</ion-button>
-      </ion-card>
+      <h2>Water</h2>
+      <div class="donateContainer">
+        <ion-slides pager="true" [options]="slideOpts">
+          <ion-slide>
+            <ion-card class="card">
+              <ion-card-header>
+                <ion-card-subtitle>Sponsor an entire well</ion-card-subtitle>
+                <ion-card-title>Whole Water Well</ion-card-title>
+              </ion-card-header>
+              <ion-card-content>
+                When you sponsor an entire well you can dedicate it with a plaque
+              </ion-card-content>
+              <ion-button expand="block" size="large" strong="true" fill="outline">Give</ion-button>
+            </ion-card>
+          </ion-slide>
+          <ion-slide>
+            <ion-card class="card">
+              <ion-card-header>
+                <ion-card-subtitle>Donate toward a well</ion-card-subtitle>
+                <ion-card-title>Water Well</ion-card-title>
+              </ion-card-header>
+              <ion-card-content>
+                Contribute to making life-saving water accessible to everyone
+              </ion-card-content>
+              <ion-button expand="block" size="large" strong="true" fill="outline">Give</ion-button>
+            </ion-card>
+          </ion-slide>
+        </ion-slides>
+      </div>
+
+      <h2>Construction and On-going Support</h2>
+      <div class="donateContainer">
+        <ion-slides pager="true" [options]="slideOpts">
+          <ion-slide>
+            <ion-card class="card">
+              <ion-card-header>
+                <ion-card-subtitle>Help us build a home</ion-card-subtitle>
+                <ion-card-title>Housing</ion-card-title>
+              </ion-card-header>
+              <ion-card-content>
+                We frequently build housing for families with children in need
+              </ion-card-content>
+              <ion-button expand="block" size="large" strong="true" fill="outline">Give</ion-button>
+            </ion-card>
+          </ion-slide>
+          <ion-slide>
+            <ion-card class="card"> 
+              <ion-card-header>
+                <ion-card-subtitle>Help us provide necessities</ion-card-subtitle>
+                <ion-card-title>General Support</ion-card-title>
+              </ion-card-header>
+              <ion-card-content>
+                We provide supplies, food, upkeep, and new construction to teachers,
+                caretakers, and parents.
+              </ion-card-content>
+              <ion-button expand="block" size="large" strong="true" fill="outline">Give</ion-button>
+            </ion-card>
+          </ion-slide>
+        </ion-slides>
+      </div>
+
+      <h2>Missionaries and Partners</h2>
+      <div class="donateContainer">
+        <ion-slides pager="true" [options]="slideOpts">
+          <ion-slide>
+            <ion-card class="card">
+              <ion-card-header>
+                <ion-card-subtitle>Missionary</ion-card-subtitle>
+                <ion-card-title>Lucy</ion-card-title>
+              </ion-card-header>
+              <ion-card-content>
+                Located in Bogota, Colombia and is very awesome. Enjoys chilis
+              </ion-card-content>
+              <ion-button expand="block" size="large" strong="true" fill="outline">Give</ion-button>
+            </ion-card>
+          </ion-slide>
+          <ion-slide>
+            <ion-card class="card">
+              <ion-card-header>
+                <ion-card-subtitle>Missionary</ion-card-subtitle>
+                <ion-card-title>Craig</ion-card-title>
+              </ion-card-header>
+              <ion-card-content>
+                Craig lives in Africa and likes Waffle House
+              </ion-card-content>
+              <ion-button expand="block" size="large" strong="true" fill="outline">Give</ion-button>
+            </ion-card>
+          </ion-slide>
+          <ion-slide>
+            <ion-card class="card">
+              <ion-card-header>
+                <ion-card-subtitle>Partner Ministry</ion-card-subtitle>
+                <ion-card-title>Answer International</ion-card-title>
+              </ion-card-header>
+              <ion-card-content>
+                Answer does stuff that Spark also does but a little different.
+              </ion-card-content>
+              <ion-button expand="block" size="large" strong="true" fill="outline">Give</ion-button>
+            </ion-card>
+          </ion-slide>
+        </ion-slides>
+      </div>
+    </div>
+    <!--end mobile slides-->
+
+    <div class="desktop">
+
+      <h2>Water</h2>
+      <div class="donateContainer">
+        <ion-card>
+          <ion-card-header>
+            <ion-card-subtitle>Sponsor an entire well</ion-card-subtitle>
+            <ion-card-title>Whole Water Well</ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+            When you sponsor an entire well you can dedicate it with a plaque
+          </ion-card-content>
+          <ion-button expand="block" size="large" strong="true" fill="outline">Give</ion-button>
+        </ion-card>
+
+        <ion-card>
+          <ion-card-header>
+            <ion-card-subtitle>Donate toward a well</ion-card-subtitle>
+            <ion-card-title>Water Well</ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+            Contribute to making life-saving water accessible to everyone
+          </ion-card-content>
+          <ion-button expand="block" size="large" strong="true" fill="outline">Give</ion-button>
+        </ion-card>
+      </div>
 
       <h2>Construction and On-going Support</h2>
       <div class="donateContainer">
@@ -86,14 +195,12 @@
 
         <ion-card>
           <ion-card-header>
-            <ion-card-subtitle
-              >Help us provide necessities</ion-card-subtitle
-            >
+            <ion-card-subtitle>Help us provide necessities</ion-card-subtitle>
             <ion-card-title>General Support</ion-card-title>
           </ion-card-header>
           <ion-card-content>
-            We provide supplies, food, upkeep, and
-            new construction to teachers, caretakers, and parents.
+            We provide supplies, food, upkeep, and new construction to teachers,
+            caretakers, and parents.
           </ion-card-content>
           <ion-button expand="block" size="large" strong="true" fill="outline">Give</ion-button>
         </ion-card>
